@@ -15,4 +15,9 @@ sudo pacman -Sy
 sudo pacman -S --needed --noconfirm chaotic-aur/paru
 sudo pacman -S --needed --noconfirm chaotic-aur/cosmic-session-git
 
+sudo pacman -S --needed --noconfirm flatpak xdg-desktop-portal
+flatpak remote-add flathub-beta https://flathub.org/beta-repo/flathub-beta.flatpakrepo
+
+flatpak install -y flathub io.github.zen_browser.zen
+
 sudo systemctl enable --now cosmic-greeter.service
